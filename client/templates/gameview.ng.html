@@ -1,0 +1,11 @@
+<div id="header"></div>
+<div id="sidebar">
+    <ul>
+      <li ng-repeat="game in games">
+        <a href="/main/{{game._id}}">{{game.name}}</a>
+        <p>{{game.type}}</p>
+      </li>
+    </ul>
+</div>
+<div id="content" ui-view></div>
+<div id="footer">Huzzah! Partial views work</div>
