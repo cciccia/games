@@ -1,2 +1,2 @@
-# games-angular-meteor
+# games
 angular-meteor games suite
