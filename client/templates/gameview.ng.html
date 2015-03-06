@@ -1,11 +1,20 @@
 <div id="header"></div>
 <div id="sidebar">
-    <ul>
-      <li ng-repeat="game in games">
-        <a href="/main/{{game._id}}">{{game.name}}</a>
-        <p>{{game.type}}</p>
-      </li>
-    </ul>
+    <div>
+        <ul>
+          <li ng-repeat="game in gv_vm.games">
+            <a href="/main/{{game._id}}">{{game.name}}</a>
+            <p>{{game.type}}</p>
+          </li>
+        </ul>
+    </div>
+    <div> Users Online:
+        <ul>
+            <li ng-repeat="user in gv_vm.users">
+            <p>{{user.profile.name}}</p>
+        </ul>
+    </div>
+
 </div>
 <div id="content" ui-view></div>
 <div id="footer">Huzzah! Partial views work</div>

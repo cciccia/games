@@ -8,7 +8,8 @@ angular.module('games').config(['$urlRouterProvider', '$stateProvider', '$locati
     $stateProvider
         .state('gameview', {
             templateUrl: 'client/templates/gameview.ng.html',
-            controller: 'GameViewController'
+            controller: 'GameViewController',
+            controllerAs: 'gv_vm'
         })
         .state('gameview.lobby', {
             url: '^/',
